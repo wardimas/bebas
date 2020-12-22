@@ -1,0 +1,299 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+
+    <title>SILOKERNF | Sistem Informasi Lowongan Kerja NF</title>
+
+    <meta
+      name="description"
+      content="Source code generated using layoutit.com"
+    />
+    <meta name="author" content="LayoutIt!" />
+
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link
+      rel="stylesheet"
+      href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+      integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p"
+      crossorigin="anonymous"
+    />
+    <style type="text/css">
+      td {
+        font-family: Verdana;
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <!-- header  -->
+      <div class="row">
+        <div class="col-md-12">
+          <!-- navigasi -->
+          <nav
+            class="navbar navbar-toggleable-sm navbar-fixed-top navbar-light"
+          >
+            <a class="navbar-brand" href="#">SILOKERNF</a>
+            <button
+              class="navbar-toggler"
+              type="button"
+              data-toggle="collapse"
+              data-target="#navbarSupportedContent"
+              aria-controls="navbarSupportedContent"
+              aria-expanded="false"
+              aria-label="Toggle navigation"
+            >
+              <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+              <ul class="navbar-nav mr-auto">
+                <li class="nav-item active">
+                  <a class="nav-link" href="index.html"
+                    >Home <span class="sr-only">(current)</span></a
+                  >
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Lowongan Baru</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Isi Loker</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Daftar Mitra</a>
+                </li>
+                <li class="nav-item">
+                  <a class="nav-link" href="#">Berita</a>
+                </li>
+              </ul>
+
+              <!-- search form -->
+              <form
+                class="form-inline d-flex justify-content-center md-form form-sm"
+              >
+                <input
+                  class="form-control form-control-sm mr-3 w-75"
+                  type="text"
+                  placeholder="Search"
+                  aria-label="Search"
+                />
+                <i class="fas fa-search" aria-hidden="true"></i>
+              </form>
+              <a
+                href="#"
+                class="nav-link login"
+                data-toggle="modal"
+                data-target="#modalLoginForm"
+                >Log In</a
+              >
+            </div>
+          </nav>
+
+          <!-- judul -->
+          <h2 class="judul">Sistem Informasi Lowongan Kerja NF - SILOKERNF</h2>
+        </div>
+      </div>
+
+      <!-- login -->
+      <div
+        class="modal fade"
+        id="modalLoginForm"
+        tabindex="-1"
+        role="dialog"
+        aria-labelledby="myModalLabel"
+        aria-hidden="true"
+      >
+        <div class="modal-dialog" role="document">
+          <div class="modal-content">
+            <div class="modal-header text-center">
+              <h4 class="modal-title w-100 font-weight-bold">Log In</h4>
+              <button
+                type="button"
+                class="close"
+                data-dismiss="modal"
+                aria-label="Close"
+              >
+                <span aria-hidden="true">&times;</span>
+              </button>
+            </div>
+            <div class="modal-body mx-3">
+              <div class="md-form mb-5 form">
+                <i class="fas fa-envelope prefix grey-text"></i>
+                <input
+                  type="email"
+                  id="defaultForm-email"
+                  class="form-control"
+                  placeholder="Username/Email"
+                />
+              </div>
+
+              <div class="md-form mb-4 eye">
+                <i class="fas fa-lock prefix grey-text"></i>
+                <input
+                  type="password"
+                  id="defaultForm-pass"
+                  class="form-control"
+                  placeholder="Password"
+                />
+                <span>
+                  <i class="far fa-eye span"></i>
+                </span>
+              </div>
+            </div>
+            <div class="modal-footer d-flex justify-content-center">
+              <button class="btn btn-default" id="log" onclick="login()">
+                Login
+              </button>
+            </div>
+          </div>
+        </div>
+      </div>
+      <nav aria-label="breadcrumb">
+        <ol class="breadcrumb d-flex justify-content-end">
+          <li class="breadcrumb-item"><a href="index.html">Home</a></li>
+          <li class="breadcrumb-item active" aria-current="page">
+            Isi Loker
+          </li>
+        </ol>
+      </nav>
+
+      <form>
+        <fieldset>
+          <legend>Isi Penawaran Lowongan Kerja</legend>
+          <table>
+            <div>
+              <tr>
+                <td>Nama Perusahaan/Organisasi</td>
+                <td>:</td>
+                <td><input type="text" name="Nama Lengkap" size="42" /></td>
+              </tr>
+            </div>
+
+            <div>
+              <tr>
+                <td><label for="cars">Bidang Usaha</label></td>
+                <td>:</td>
+                <td>
+                  <select id="cars" name="cars">
+                    <option value="volvo">Perbankan</option>
+                    <option value="saab">Perikanan</option>
+                    <option value="fiat">Perhotelan</option>
+                    <option value="audi">Perdagangan</option>
+                  </select>
+                </td>
+              </tr>
+            </div>
+
+            <div>
+              <tr>
+                <td valign="top">Deskripsi Lowongan</td>
+                <td valign="top">:</td>
+                <td valign="top" colspan="3">
+                  <textarea
+                    name="alamat"
+                    id="alamat"
+                    class="form"
+                    cols="40"
+                    rows="1"
+                  ></textarea>
+                </td>
+              </tr>
+            </div>
+
+            <div>
+              <tr>
+                <td valign="top">Deskripsi Kualifikasi Lowongan</td>
+                <td valign="top">:</td>
+                <td valign="top" colspan="3">
+                  <textarea
+                    name="alamat"
+                    id="alamat"
+                    class="form"
+                    cols="40"
+                    rows="1"
+                  ></textarea>
+                </td>
+              </tr>
+            </div>
+
+            <div>
+              <tr>
+                <td>Kategori Lowongan</td>
+                <td>:</td>
+                <td>
+                  <input type="radio" name="sex" value="1" id="" /><label
+                    class=""
+                    for=""
+                    >Programmer
+                  </label>
+                  <input type="radio" name="sex" value="2" id="" /><label
+                    class=""
+                    for=""
+                    >Network & Infrastructure</label
+                  >
+                  <input type="radio" name="sex" value="2" id="" /><label
+                    class=""
+                    for=""
+                    >Analyst</label
+                  >
+                  <input type="radio" name="sex" value="2" id="" /><label
+                    class=""
+                    for=""
+                    >Data Science</label
+                  >
+                </td>
+              </tr>
+            </div>
+
+            <div>
+              <tr>
+                <td>Tanggal Dateline</td>
+                <td>:</td>
+                <td><input type="date" /></td>
+              </tr>
+            </div>
+
+            <div>
+              <tr>
+                <td><label for="hp">Kontak person</label></td>
+                <td>:</td>
+                <td colspan="3">
+                  <input name="hp" id="hp" type="text" class="form" />
+                </td>
+              </tr>
+            </div>
+
+            <div>
+              <tr>
+                <td><label for="email">Email</label></td>
+                <td>:</td>
+                <td colspan="3">
+                  <input name="email" id="email" type="text" class="form" />
+                </td>
+              </tr>
+            </div>
+          </table>
+          <input type="submit" class="btn" value="Submit" />
+          <input type="reset" class="btn" value="Reset" />
+        </fieldset>
+      </form>
+
+      <!-- Footer -->
+      <footer class="page-footer font-small blue">
+        <!-- Copyright -->
+        <div class="footer-copyright text-center py-3">
+          <p>© 2021 Copyright: Develop by Mahasiswa STTNF</p>
+        </div>
+        <!-- Copyright -->
+      </footer>
+      <!-- Footer -->
+    </div>
+
+    <script src="js/jquery.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/scripts.js"></script>
+  </body>
+</html>
